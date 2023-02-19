@@ -1,0 +1,19 @@
+tasks:
+  Get and log the value of the vault secrets using the Get Secret keyword:
+    robotTaskName: Get and log the value of the vault secrets using the Get Secret
+      keyword
+  Order robots from RobotSpareBin Industries Inc:
+    robotTaskName: Order robots from RobotSpareBin Industries Inc
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log"
+      tasks.robot
+condaConfigFile: conda.yaml
+ignoreFiles:
+- .gitignore
+artifactsDir: output
+PATH:
+- .
+PYTHONPATH:
+- keywords
+- resources
+- libraries
